@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".moudle.ui.HomeActivity">
+    <com.ruiwenliu.kotlin.moudle.base.widget.NoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:background="@color/colorLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorWrite"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/tv_home_page"
+            android:layout_height="match_parent"
+            android:text="@string/home_page"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/tv_collect"
+            android:layout_height="match_parent"
+            android:text="@string/collect"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/tv_mine"
+            android:layout_height="match_parent"
+            android:text="@string/mine"
+            />
+    </LinearLayout>
+
+</LinearLayout>
